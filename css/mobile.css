@@ -1,0 +1,47 @@
+#main-nav .social {
+   display: none;
+}
+
+#main-nav .container {
+   grid-template-columns: repeat(1, auto);
+   justify-content: center;
+} 
+
+#main-nav .logo { 
+   padding: 0.5rem;
+}
+
+#main-nav ul {
+   padding: 0.5rem;
+   justify-content: center;
+}
+
+
+
+
+/* Editor's Pick */
+
+#home-articles .articles-container,
+#main-footer .footer-container,
+.page-container {
+   grid-template-columns: repeat(2, auto);
+}
+
+.page-container {
+   grid-template-columns: 1fr;
+   text-align: center;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child,
+/* #main-footer .footer-container > *:last-child, */
+.page-container > *:first-child
+{
+   grid-template-columns: 1fr;
+   grid-column: 1;
+}
+
+#main-footer .footer-container > *:last-child {
+   grid-template-columns: 1fr;
+   grid-column: 1 / span 2;
+}
